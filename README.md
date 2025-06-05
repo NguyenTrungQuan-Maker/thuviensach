@@ -1,2 +1,2 @@
 # phongtro
-Giới thiệu ngắn gọn, ví dụ: Dự án giới thiệu phòng trọ - mã nguồn mở cho sinh viên học tập
+Dự án giới thiệu Thư Viện Sách - mã nguồn mở cho sinh viên học tập
