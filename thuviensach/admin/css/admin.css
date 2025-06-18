@@ -1,0 +1,80 @@
+
+body {
+    overflow-x: hidden; 
+    background-color: #f4f7f6; 
+}
+
+#sidebar {
+    position: fixed; 
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    z-index: 100; 
+    padding: 0; 
+    padding-top: 15px; 
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); 
+    background-color: #343a40;
+    color: #fff; 
+    transition: all 0.3s ease;
+}
+
+#sidebar .nav-link {
+    font-weight: 400; 
+    color: rgba(255, 255, 255, 0.6); 
+    padding: 10px 15px; 
+    margin-bottom: 5px; 
+    border-radius: 5px; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#sidebar .nav-link i { 
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+#sidebar .nav-link.active {
+    color: #fff; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    font-weight: 500;
+}
+
+#sidebar .nav-link:hover {
+    color: #fff; 
+    background-color: rgba(255, 255, 255, 0.05); 
+}
+
+#sidebar .text-muted {
+    color: rgba(255, 255, 255, 0.4) !important;
+    font-size: 0.9em;
+}
+
+#sidebar h5 { 
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+
+main {
+    padding-top: 20px;
+    margin-left: 250px; 
+    transition: margin-left 0.3s ease; 
+}
+
+
+/* Style cơ bản cho tiêu đề trang nội dung */
+main h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style cho đường phân cách */
+.border-bottom {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+/* Thêm style cho icon Font Awesome */
+.fas {
+    margin-right: 8px; /* Khoảng cách giữa icon và chữ */
+}

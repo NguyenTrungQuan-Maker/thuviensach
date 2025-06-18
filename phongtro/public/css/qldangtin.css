@@ -1,0 +1,139 @@
+/* qldangtin.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 20px;
+    color: #333;
+
+    /* Thêm flex để căn giữa 2 nút dưới cùng */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa 2 nút */
+    flex-wrap: wrap; /* Cho phép xuống dòng nếu màn hình nhỏ */
+    flex-direction: column; /* Để h2, table chiếm nguyên dòng */
+}
+
+/* H2 và table chiếm nguyên chiều ngang */
+h2, table {
+    flex-basis: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #2980b9;
+    color: white;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e6f2ff;
+}
+
+tbody td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Link Sửa */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button trong form (Xóa, Đã thuê) */
+form button {
+    color: #2980b9;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+form button:hover {
+    color: #1a5276;
+}
+
+/* Riêng nút Xóa màu đỏ */
+form button[style*="color: red"] {
+    color: #c0392b;
+}
+
+form button[style*="color: red"]:hover {
+    color: #7b241c;
+}
+
+/* Thông báo thành công và lỗi */
+p[style*="color: green"] {
+    text-align: center;
+    font-weight: 600;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+p[style*="color: red"] {
+    text-align: center;
+    font-weight: 600;
+    color: #c0392b;
+    margin-bottom: 15px;
+}
+
+/* Các link dưới bảng */
+p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    /* Không cần display inline-block ở p nữa vì body là flex */
+}
+
+/* Style các link dưới bảng */
+p a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    min-width: 120px;
+    text-align: center;
+}
+
+p a:hover {
+    background-color: #1a5276;
+}

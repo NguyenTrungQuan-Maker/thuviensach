@@ -1,0 +1,352 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ================= HEADER ================= */
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #003973, #e5e5be);
+    padding: 10px 0 6px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav a {
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* ================= SEARCH SECTION ================= */
+.search-section {
+    background: linear-gradient(120deg, #e5e5be 0%, #f0f2f5 100%);
+    padding: 25px 30px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(3, 37, 65, 0.1);
+    border: 1px solid #d9d9a6;
+}
+
+.search-section h2 {
+    color: #003973;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center; /* Thêm căn giữa cho h2 search */
+}
+
+.search-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: center; /* Căn giữa các input */
+}
+
+.search-form input[type="text"],
+.search-form input[type="number"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1.5px solid #aebf9f;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+    min-width: 180px; /* Đảm bảo đủ rộng trên desktop */
+}
+
+.search-form input[type="text"]:focus,
+.search-form input[type="number"]:focus {
+    border-color: #003973;
+    outline: none;
+}
+
+/* Amenities */
+.amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    background-color: #f8f9fa; /* Nền nhẹ cho phần tiện ích */
+    border: 1px solid #e2e6ea;
+    padding: 10px 15px;
+    border-radius: 8px;
+    justify-content: center; /* Căn giữa các tiện ích */
+}
+.amenities label {
+    display: flex; /* Dùng flex để căn checkbox và text */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-right: 15px;
+    margin-bottom: 0; /* Bỏ margin-bottom đã có */
+    font-size: 14px;
+    background-color: #d9d9a6;
+    padding: 5px 12px;
+    border-radius: 12px;
+    color: #003973;
+    cursor: pointer;
+    user-select: none;
+}
+
+.amenities input[type="checkbox"] { /* Sửa để phù hợp với input checkbox */
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.form-actions {
+    margin-top: 18px;
+    text-align: center; /* Căn giữa nút tìm kiếm */
+}
+
+.form-actions button {
+    padding: 12px 26px;
+    background-color: #003973;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions button:hover {
+    background-color: #001f3f;
+}
+
+.reset-link {
+    margin-left: 24px;
+    color: #666;
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block; /* Để có thể căn giữa cùng button */
+    padding: 12px 25px; /* Giữ padding để cân đối với button */
+    background-color: #aebf9f; /* Màu nền cho nút reset */
+    border-radius: 10px;
+    color: #003973;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+.reset-link:hover {
+    background-color: #8c9c7f;
+    color: white;
+}
+
+
+/* ================= RESULTS ================= */
+.results-section {
+    margin-top: 40px;
+    background: #f9f9f9;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(3, 37, 65, 0.05);
+    border: 1px solid #dde2d3;
+}
+
+.results-section h3 {
+    font-size: 22px;
+    margin-bottom: 24px;
+    color: #003973;
+    font-weight: 700;
+    text-align: center; /* Căn giữa tiêu đề kết quả */
+}
+
+/* Sort options */
+.sort-options {
+    margin-bottom: 24px;
+    text-align: center; /* Căn giữa các tùy chọn sắp xếp */
+}
+
+.sort-options a {
+    margin-right: 15px;
+    padding: 8px 18px;
+    background-color: #dde2d3;
+    border-radius: 12px;
+    color: #003973;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.sort-options a:hover,
+.sort-options a.active {
+    background-color: #003973;
+    color: white;
+}
+
+/* Room list layout */
+.room-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+.room-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 57, 115, 0.08);
+    transition: all 0.3s ease;
+    display: flex; /* Sử dụng flexbox để bố cục nội dung */
+    flex-direction: column; /* Sắp xếp nội dung theo cột: ảnh trên, chi tiết dưới */
+    overflow: hidden; /* Đảm bảo mọi thứ bên trong không tràn ra */
+    padding-left: 12px;
+}
+
+.room-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 57, 115, 0.15);
+}
+
+.room-card .room-image {
+    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của card */
+    height: 200px; /* Chiều cao cố định cho ảnh */
+    overflow: hidden;
+}
+
+.room-card .room-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cắt ảnh để vừa với khung mà không bị méo */
+    display: block; /* Loại bỏ khoảng trống dưới ảnh */
+}
+
+.room-card .room-details-content { /* Phần nội dung chi tiết phòng */
+    padding: 22px 24px; /* Giữ padding như cũ cho phần nội dung */
+    flex-grow: 1; /* Cho phép phần nội dung giãn nở để đẩy nút xuống */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đẩy nút "Xem chi tiết" xuống cuối */
+}
+
+.room-card h4 {
+    font-size: 20px;
+    color: #00264d;
+    margin-top: 0; /* Đảm bảo không có margin trên cùng */
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.room-card p {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #4a6b8a;
+}
+
+.room-card .price { /* Thêm style cho giá tiền */
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #28a745; /* Màu xanh lá cây cho giá */
+    margin-top: 10px; /* Khoảng cách với các thông tin trên */
+    margin-bottom: 15px; /* Khoảng cách với nút */
+}
+
+.room-card a {
+    display: inline-block;
+    margin-top: auto; /* Đẩy nút xuống cuối cùng trong flex container */
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-align: center; /* Căn giữa text trong nút */
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Đảm bảo nút không kéo giãn toàn bộ chiều rộng */
+}
+
+.room-card a:hover {
+    background-color: #004080;
+}
+
+/* ================= PAGINATION ================= */
+.pagination-section {
+    margin-top: 48px;
+    padding: 0 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1.5px solid #aebf9f;
+    color: #003973;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #003973;
+    color: white;
+    border-color: #001f3f;
+}
+
+.pagination .current-page {
+    background-color: #003973;
+    color: white;
+    font-weight: 700;
+}
+
+/* ================= FOOTER ================= */
+.main-footer {
+    background: linear-gradient(135deg, #003973, #e5e5be);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+

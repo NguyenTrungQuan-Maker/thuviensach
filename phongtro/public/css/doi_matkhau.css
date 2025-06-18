@@ -1,0 +1,104 @@
+/* Toàn bộ trang */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3542;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #1e90ff;
+    margin-top: 30px;
+}
+
+/* Định dạng form */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="password"]:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+/* Nút đổi mật khẩu */
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0f7fff;
+}
+
+form button[type="submit"]:active {
+    background-color: #0a64d1;
+}
+
+/* Thông báo lỗi và thành công */
+.success-message,
+.error-message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Các liên kết dưới form */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

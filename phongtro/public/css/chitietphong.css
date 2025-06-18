@@ -1,0 +1,97 @@
+/* Giao diện trang chi tiết phòng trọ */
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    color: #2f3542;
+}
+
+h2 {
+    text-align: center;
+    color: #1e90ff;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+h3 {
+    color: #1e90ff;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Khối thông tin chung */
+div {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Thông tin chi tiết */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* Danh sách tiện ích */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495e;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #1e90ff;
+}
+
+/* Hình ảnh phòng */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 10px 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Link quay về */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    div {
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

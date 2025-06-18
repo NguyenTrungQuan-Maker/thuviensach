@@ -1,0 +1,91 @@
+
+body {
+    padding-top: 56px;
+}
+
+.catalog-section {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    color: #00bcd4;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 10px;
+}
+
+
+.search-filter-area {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #2e2e3f;
+    border: 1px solid #3f3f5a;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.search-bar {
+    flex: 0 1 40%; 
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+}
+
+
+.search-bar .form-control {
+    flex-grow: 1;
+}
+
+.search-bar button {
+   
+    white-space: nowrap;
+   
+}
+
+.filter-options {
+   
+    flex: 1 1 48%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+   
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.filter-group {
+   
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   
+   
+}
+
+.filter-group label {
+   
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+   
+}
+
+.filter-group select {
+   
+    flex-grow: 1;
+   
+}
+
+.book-item-col {
+    display: block;
+}
+

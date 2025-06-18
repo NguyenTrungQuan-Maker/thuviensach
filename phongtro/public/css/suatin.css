@@ -1,0 +1,167 @@
+/* Toàn bộ trang */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #1e90ff;
+    margin-top: 30px;
+}
+
+/* Form chỉnh sửa tin đăng */
+form {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+/* Nút Cập nhật tin đăng */
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0f7fff;
+}
+
+form button[type="submit"]:active {
+    background-color: #0a64d1;
+}
+
+/* Thông báo lỗi và thành công */
+.success-message,
+.error-message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Hình ảnh hiện tại và nút xóa ảnh */
+.image-preview {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+}
+
+.image-preview img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+.remove-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 0 0 0 5px;
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.remove-image:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+/* Tiện ích */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 14px;
+}
+
+button[type="button"] {
+    background-color: transparent;
+    border: none;
+    color: #1e90ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button[type="button"]:hover {
+    color: #0f7fff;
+}
+
+/* Các liên kết dưới form */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
